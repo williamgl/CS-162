@@ -8,13 +8,9 @@ bob = turtle.Turtle()
 
 
 def square(t, n):  # t is turtle module, n is the length. exercise 1 & 2
-    t.fd(n)
-    t.lt(90)
-    t.fd(n)
-    t.lt(90)
-    t.fd(n)
-    t.lt(90)
-    t.fd(n)
+    for i in range(4):
+        t.fd(n)
+        t.lt(90)
 
 
 def polygon(t, n, length, per=1.0):
@@ -36,7 +32,7 @@ def polygon(t, n, length, per=1.0):
 def circle(t, r, angle=360):
     cir = int(2 * math.pi * r)
     length = 1  # This is the length of unit for the circle
-    n = int(cir / length)
+    n = int(cir / length)   # This is the number of line segments in our approximation of a circle
     per = angle / 360
     polygon(t, n, length, per)
 
