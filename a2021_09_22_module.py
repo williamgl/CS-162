@@ -8,6 +8,8 @@
 
 # print(lc('2021_09_22_module.py'))
 from math import sqrt
+# import rectangle as rec
+from rectangle import Rectangle as rec
 
 
 def distance(x1, y1, x2, y2):
@@ -16,3 +18,5 @@ def distance(x1, y1, x2, y2):
 
 if __name__ == '__main__':
     d = distance(3, 5, -1, 2)
+    rec_1 = rec(4, 5)
+    print(rec_1.perimeter())
