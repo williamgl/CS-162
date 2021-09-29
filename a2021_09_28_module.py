@@ -28,3 +28,30 @@ class Box:
     def surface_area(self):
         return 2 * (self._height * self._width + self._width * self._length
                     + self._length * self._height)
+
+
+class OutOfRangeError(Exception):
+    pass
+
+
+def name_the_number():
+    number = int(input('type in an integer:'))
+    if number == 1:
+        print('one')
+    elif number == 2:
+        print('two')
+    elif number == 3:
+        print('three')
+    else:
+        raise OutOfRangeError
+
+
+if __name__ == '__main__':
+    try:
+        name_the_number()
+    except OutOfRangeError:
+        print("That's not one of the allowed values!")
+
+
+def multiply_3_numbers(a, b, c):
+    return a * b * c

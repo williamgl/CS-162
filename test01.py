@@ -12,6 +12,6 @@ def linecount(filename):
 
 
 if __name__ == '__main__':
-    linecount('test.py')
+    linecount('test01.py')
     d = distance(3, 5, -1, 2)
     print(d)
