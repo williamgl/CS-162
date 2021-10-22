@@ -33,5 +33,9 @@ class Employee:
 
 
 class SeniorEmployee(Employee):
+    # 如果变量没变，这段可以省
+    def __init__(self, name, salary):
+        super().__init__(name, salary)
+
     def gross_monthly_pay(self):
         return super().gross_monthly_pay() + 500
