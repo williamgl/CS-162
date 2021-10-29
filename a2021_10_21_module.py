@@ -1,6 +1,6 @@
 # Author: Gan Li
 # Date: 10/21/21 11:20 上午
-# Description:
+# Description: Module 5
 cat_list = ['Siamese', 'Manx', 'Abyssinian', 'Savannah', 'Jammy']
 
 file = open('cats.txt', 'r')
